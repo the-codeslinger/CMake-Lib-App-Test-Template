@@ -5,10 +5,10 @@ add_library(cmake-template-lib STATIC "")
 # Add headers to private sources for better support in IDEs.
 target_sources(cmake-template-lib
     PRIVATE
-        "${CMAKE_CURRENT_SOURCE_DIR}/src/fancy_function.cpp"
-        "${CMAKE_CURRENT_SOURCE_DIR}/include/fancy_function.h"
+        "src/fancy_function.cpp"
+        "include/fancy_function.h"
     PUBLIC
-        "${CMAKE_CURRENT_SOURCE_DIR}/include/fancy_function.h"
+        "include/fancy_function.h"
 )
 
 target_include_directories(cmake-template-lib PUBLIC "include")

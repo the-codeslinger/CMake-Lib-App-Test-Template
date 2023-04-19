@@ -15,9 +15,12 @@ enable_testing()
 
 add_executable(cmake-template-test "")
 
+# GoogleTest requires at least C++14
+target_compile_features(cmake-template-test PUBLIC cxx_std_11)
+
 target_sources(cmake-template-test
     PRIVATE
-        "${CMAKE_CURRENT_SOURCE_DIR}/src/test_fancy_function.cpp"
+        "src/test_fancy_function.cpp"
 )
 
 target_link_libraries(cmake-template-test 

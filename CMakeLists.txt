@@ -1,8 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
 
-# GoogleTest requires at least C++14
-set(CMAKE_CXX_STANDARD 14)
-
 project(
     CMake-Lib-App-Template
     VERSION 1.0
