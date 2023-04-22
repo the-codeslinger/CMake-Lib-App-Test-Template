@@ -6,7 +6,6 @@ add_library(cmake-template-lib STATIC "")
 target_sources(cmake-template-lib
     PRIVATE
         "src/fancy_function.cpp"
-        "include/fancy_function.h"
     PUBLIC
         "include/fancy_function.h"
 )
